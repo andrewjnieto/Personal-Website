@@ -1,3 +1,5 @@
+/* Top Content CSS */
+
 body {
     font-size: 100%;
 }
@@ -24,4 +26,21 @@ body {
  
 .top-content .top-big-link {
     margin-top: 45px;
+}
+
+/* About Me CSS */
+
+.aboutme-content {
+    background-color: #f5eed0;
+}
+
+
+/*Education CSS */
+
+
+
+/*Career Content */
+
+.career-content {
+    background-color: #f5eed0;
 }
