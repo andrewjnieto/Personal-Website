@@ -3,10 +3,30 @@
 body {
     font-size: 100%;
 }
+
+.content {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
 .top-content {
     padding: 15%;
     height: 100vh;
     text-align: center;
+}
+
+.section-header {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.section-content {
+    padding-top: 5vh;
 }
 
 .top-content .text {
@@ -24,23 +44,29 @@ body {
     margin: 10px 0 10px 0;
 }
  
-.top-content .top-big-link {
-    margin-top: 45px;
-}
-
 /* About Me CSS */
 
-.aboutme-content {
+.content:nth-of-type(2n) {
     background-color: #f5eed0;
 }
 
+.subsection-content {
+    padding-bottom: 5vh;
+}
 
-/*Education CSS */
+.subsection-content:after {
+    content: "";
+    display: block;
+    width: 33%;
+    padding-top: 20px;
+    border-bottom: 1px solid black;
+}
 
+.subsection-content:last-of-type:after {
+    content: "";
+    border-bottom: 0px solid red;
+}
 
+/*Education CSS a1faff*/
 
 /*Career Content */
-
-.career-content {
-    background-color: #f5eed0;
-}

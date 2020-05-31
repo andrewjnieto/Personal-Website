@@ -1,3 +1,3 @@
 $(document).ready(function () {
-	$('.top-content').backstretch("assets/background2.jpg");
+	$('.top-content').backstretch("assets/backgrounds/background.jpg");
 });

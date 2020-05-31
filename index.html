@@ -5,10 +5,10 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta name="description" content="Website resume for Andrew Nieto, a senior computer science student based in Oxford, Ohio. Contains skills, experiences, education, and related projects.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-	<link rel="manifest" href="assets/site.webmanifest">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+	<link rel="manifest" href="assets/icons/site.webmanifest">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -18,7 +18,7 @@
 	<script src="index.js"></script>
 </head>
 <body>
-	<div class="content top-content">
+	<div class="header top-content">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 offset-md-2 text">
@@ -37,21 +37,23 @@
 					<h3>About Me</h3>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col col-md-4 aboutme-box">
-					<img class ="professional" src="assets/small-professional.jpg">
-				</div>
-				<div class="col col-sm-4 aboutme-box">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur. Nibh praesent tristique magna sit amet purus. Venenatis tellus in metus vulputate. Accumsan tortor posuere ac ut consequat semper viverra nam. Elit sed vulputate mi sit amet mauris commodo.</p>
-				</div>
-				<div class="col col-sm-4 aboutme-box">
-					<h6>Quick Facts</h6>
-					<ul id="details-list">
-						<li class="detail-item">Lorem impsum dolor</li>
-						<li class="detail-item">Lorem impsum dolor</li>
-						<li class="detail-item">Lorem impsum dolor</li>
-						<li class="detail-item">Lorem impsum dolor</li>
-					</ul>
+			<div class="section-content">
+				<div class="row">
+					<div class="col col-md-4 aboutme-box">
+						<img class ="professional" src="assets/profile_pictures/small-professional.jpg">
+					</div>
+					<div class="col col-sm-4 aboutme-box">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur. Nibh praesent tristique magna sit amet purus. Venenatis tellus in metus vulputate. Accumsan tortor posuere ac ut consequat semper viverra nam. Elit sed vulputate mi sit amet mauris commodo.</p>
+					</div>
+					<div class="col col-sm-4 aboutme-box">
+						<h6>Quick Facts</h6>
+						<ul id="details-list">
+							<li class="detail-item">Lorem impsum dolor</li>
+							<li class="detail-item">Lorem impsum dolor</li>
+							<li class="detail-item">Lorem impsum dolor</li>
+							<li class="detail-item">Lorem impsum dolor</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -59,18 +61,22 @@
 	<div class="content education-content">
 		<div class="container">
 			<div class="row">
-				<div class="col education-header">
+				<div class="col section-header">
 					<h3>Education</h3>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col col-md-4 education-section">
-					<h6>Miami University</h6>
-					<ul class="education-details-list">
-						<li class="detail-item">Lorem impsum dolor</li>
-						<li class="detail-item">Lorem impsum dolor</li>
-					</ul>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur. Nibh praesent tristique magna sit amet purus. Venenatis tellus in metus vulputate. Accumsan tortor posuere ac ut consequat semper viverra nam. Elit sed vulputate mi sit amet mauris commodo.</p>
+			<div class="section-content">
+				<div class="row subsection-content">
+					<div class="col col-sm-5 education-section">
+						<h6>Miami University</h6>
+						<ul class="education-details-list">
+							<li class="detail-item">Lorem impsum dolor</li>
+							<li class="detail-item">Lorem impsum dolor</li>
+						</ul>
+					</div>
+					<div class="col col-lg-7 education-section">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur. Nibh praesent tristique magna sit amet purus. Venenatis tellus in metus vulputate. Accumsan tortor posuere ac ut consequat semper viverra nam. Elit sed vulputate mi sit amet mauris commodo.</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -78,32 +84,42 @@
 	<div class="content career-content">
 		<div class="container">
 			<div class="row">
-				<div class="col career-header">
+				<div class="col section-header">
 					<h3>Career</h3>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col col-md-4 career-section">
-					<h6>Mastercard Big Data Engineering Intern</h6>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur. Nibh praesent tristique magna sit amet purus. Venenatis tellus in metus vulputate. Accumsan tortor posuere ac ut consequat semper viverra nam. Elit sed vulputate mi sit amet mauris commodo.</p>
+			<div class="section-content">
+				<div class="row subsection-content">
+					<div class="col col-sm-5 career-section">
+						<h6>Mastercard Big Data Engineering Intern</h6>
+					</div>
+					<div class="col col-lg-7 career-section">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur. Nibh praesent tristique magna sit amet purus. Venenatis tellus in metus vulputate. Accumsan tortor posuere ac ut consequat semper viverra nam. Elit sed vulputate mi sit amet mauris commodo.</p>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col col-md-4 career-section">
-					<h6>MiTech Computer Services</h6>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur. Nibh praesent tristique magna sit amet purus. Venenatis tellus in metus vulputate. Accumsan tortor posuere ac ut consequat semper viverra nam. Elit sed vulputate mi sit amet mauris commodo.</p>
+				<div class="row subsection-content">
+					<div class="col col-sm-5 career-section">
+						<h6>MiTech Computer Services</h6>
+					</div>
+					<div class="col col-lg-7 career-section">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur. Nibh praesent tristique magna sit amet purus. Venenatis tellus in metus vulputate. Accumsan tortor posuere ac ut consequat semper viverra nam. Elit sed vulputate mi sit amet mauris commodo.</p>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col col-md-4 career-section">
-					<h6>MiTech Global Initiatives</h6>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur. Nibh praesent tristique magna sit amet purus. Venenatis tellus in metus vulputate. Accumsan tortor posuere ac ut consequat semper viverra nam. Elit sed vulputate mi sit amet mauris commodo.</p>
+				<div class="row subsection-content">
+					<div class="col col-sm-5 career-section">
+						<h6>MiTech Global Initiatives</h6>
+					</div>
+					<div class="col col-lg-7 career-section">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur. Nibh praesent tristique magna sit amet purus. Venenatis tellus in metus vulputate. Accumsan tortor posuere ac ut consequat semper viverra nam. Elit sed vulputate mi sit amet mauris commodo.</p>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col col-md-4 career-section">
-					<h6>Miami University Conference Services</h6>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur. Nibh praesent tristique magna sit amet purus. Venenatis tellus in metus vulputate. Accumsan tortor posuere ac ut consequat semper viverra nam. Elit sed vulputate mi sit amet mauris commodo.</p>
+				<div class="row subsection-content">
+					<div class="col col-sm-5 career-section">
+						<h6>Miami University Conference Services</h6>
+					</div>
+					<div class="col col-lg-7 career-section">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur. Nibh praesent tristique magna sit amet purus. Venenatis tellus in metus vulputate. Accumsan tortor posuere ac ut consequat semper viverra nam. Elit sed vulputate mi sit amet mauris commodo.</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -111,52 +127,35 @@
 	<div class="content abilities-content">
 		<div class="container">
 			<div class="row">
-				<div class="col abilities-header">
+				<div class="col section-header">
 					<h3>Abilities</h3>
 				</div>
 			</div>
-			<h6>Skills</h6>
-			<div class="row">
-				<div class="col col-md-4 abilites-section">
-					<ul class="abilites-details-list">
-						<li class="abilites-detail-item">Java</li>
-						<li class="abilites-detail-item">Python</li>
-						<li class="abilites-detail-item">C#</li>
-						<li class="abilites-detail-item">SQL/Relational Databases</li>
-						<li class="abilites-detail-item">NoSQL Databases</li>
-						<li class="abilites-detail-item">Machine Learning (Pandas, SciPy, Gensim)</li>
-						<li class="abilites-detail-item">Mobile App Development (C#)</li>
-					</ul>
-				</div>
-				<div class="col col-md-4 abilites-section">
-					<ul class="abilites-details-list">
-						<li class="abilites-detail-item">Javascript/JQuery/Node.js</li>
-						<li class="abilites-detail-item">PHP</li>
-						<li class="abilites-detail-item">Linux</li>
-						<li class="abilites-detail-item">HTML/CSS</li>
-						<li class="abilites-detail-item">C++</li>
-						<li class="abilites-detail-item">Object Oriented Programming</li>
-						<li class="abilites-detail-item">REST Services</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-		<div class="content projects-content">
-		<div class="container">
-			<div class="row">
-				<div class="col projectsc -header">
-					<h3>Education</h3>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col col-md-4 education-section">
-					<h6>Miami University</h6>
-					<ul class="education-details-list">
-						<li class="detail-item">Lorem impsum dolor</li>
-						<li class="detail-item">Lorem impsum dolor</li>
-					</ul>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est lorem ipsum dolor sit amet consectetur. Nibh praesent tristique magna sit amet purus. Venenatis tellus in metus vulputate. Accumsan tortor posuere ac ut consequat semper viverra nam. Elit sed vulputate mi sit amet mauris commodo.</p>
+			<div class="section-content">
+				<h6>Skills</h6>
+				<div class="row subsection-content">
+					<div class="col col-md-4 abilites-section">
+						<ul class="abilites-details-list">
+							<li class="abilites-detail-item">Java</li>
+							<li class="abilites-detail-item">Python</li>
+							<li class="abilites-detail-item">C#</li>
+							<li class="abilites-detail-item">SQL/Relational Databases</li>
+							<li class="abilites-detail-item">NoSQL Databases</li>
+							<li class="abilites-detail-item">Machine Learning (Pandas, SciPy, Gensim)</li>
+							<li class="abilites-detail-item">Mobile App Development (C#)</li>
+						</ul>
+					</div>
+					<div class="col col-md-4 abilites-section">
+						<ul class="abilites-details-list">
+							<li class="abilites-detail-item">Javascript/JQuery/Node.js</li>
+							<li class="abilites-detail-item">PHP</li>
+							<li class="abilites-detail-item">Linux</li>
+							<li class="abilites-detail-item">HTML/CSS</li>
+							<li class="abilites-detail-item">C++</li>
+							<li class="abilites-detail-item">Object Oriented Programming</li>
+							<li class="abilites-detail-item">REST Services</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
