@@ -1,5 +1,4 @@
-/* Top Content CSS */
-
+/*General Content */
 body {
     font-size: 100%;
     font-family: 'Noto Sans JP', sans-serif;
@@ -13,38 +12,19 @@ body {
     padding-right: 20vw;
 }
 
-.top-content {
-    padding: 15%;
-    height: 100vh;
-    text-align: center;
-}
-
 .section-header {
     border-bottom: 1px solid black;
     text-align: center;
     padding-bottom: 2vh;
 }
 
+.section-header h3{
+    font-size: 45px;
+}
+
 .section-content {
     padding-top: 5vh;
 }
-
-.top-content .text {
-    color: #fff;
-    font-size: 3em;
-}
-
-.top-content .text h1 {
-    margin-top: 2px;
-    color: #fff;
-    font-size: 2em;
-}
-
-.top-content .description {
-    margin: 10px 0 10px 0;
-}
-
-/* About Me CSS */
 
 .content:nth-of-type(2n) {
     background-color: #8dd3f0;
@@ -53,6 +33,20 @@ body {
 .subsection-content {
     padding-bottom: 5vh;
     padding-top: 5vh;
+}
+
+.subsection-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subsection-content h3 {
+    text-align: center;
+}
+
+.subsection-content ul {
+    list-style-position: inside;
 }
 
 .subsection-content:after {
@@ -75,67 +69,79 @@ body {
     text-align: center;
 }
 
+/* Top Content CSS */
+.top-content {
+    padding: 15%;
+    height: 100vh;
+    text-align: center;
+}
+
+.top-content .text {
+    color: #fff;
+    font-size: 3em;
+}
+
+.top-content .text h1 {
+    margin-top: 2px;
+    color: #fff;
+    font-size: 2em;
+}
+
+.top-content .description {
+    margin: 10px 0 10px 0;
+}
+
+/* About Me CSS */
 .aboutme-box {
     font-size: 22px;
     width: 100%;
 }
 
+/*Skills section css */
+#abilities-content h4 {
+    padding-top: 3vh;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.skills-section li {
+    font-size: 20px;
+}
+
+.languages-col p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/*navbar css*/
 #resume-navbar {
-    border: 0px;
     position: absolute;
-    top: 100%;
-    right: 5%;
-    width: 150px;
-    font-size: 20px;
-    z-index: 999;
-    background-color: #008eb5;
+}
+.navbar-nav {
+    list-style-type: none;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 175px;
+    background-color: lightgray;
     border-radius: 5px;
-}
-
-.navbar-nav > li {
-    display: block;
-    float: none;
-    height: 60px;
-} 
-.navbar-nav  > li a {
-    display: block;
-    font-weight: 600;
-    color: #FFFFFF;
-}
-.navbar-nav  > li a:hover, .navbar .nav > li a:focus {
-    color: #999999;
-}
-
-.padding-0{
-    padding-right:0;
-    padding-left:0;
-    margin-left:0;
-    margin-right:0;
-}
-
-.section-header h3{
-    font-size: 45px;
-}
-
-.subsection-content img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.subsection-content h3 {
-    text-align: center;
-}
-
-.subsection-content ul {
-    list-style-position: inside;
-}
-
-.section-details-list {
     font-size: 20px;
 }
 
-/*Education CSS a1faff*/
+.navbar-nav li a {
+    display: block;
+}
 
-/*Career Content */
+.navbar-nav li a:hover {
+    background-color: darkgrey;
+    color: white;
+    font-size: 25px;
+}
+.active {
+    background-color: grey;
+}
+
+.active a {
+    color: white;
+}
