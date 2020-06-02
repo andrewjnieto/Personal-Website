@@ -2,11 +2,11 @@
 
 body {
     font-size: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .content {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 2vh;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20vw;
@@ -52,14 +52,18 @@ body {
 
 .subsection-content {
     padding-bottom: 5vh;
+    padding-top: 5vh;
 }
 
 .subsection-content:after {
     content: "";
     display: block;
-    width: 33%;
-    padding-top: 20px;
-    border-bottom: 1px solid black;
+    width: 25%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 5px solid black;
 }
 
 .subsection-content:last-of-type:after {
@@ -67,8 +71,13 @@ body {
     border-bottom: 0px solid red;
 }
 
-#aboutme-photo {
-    width: 60%;
+.subsection-header {
+    text-align: center;
+}
+
+.aboutme-box {
+    font-size: 22px;
+    width: 100%;
 }
 
 #resume-navbar {
@@ -97,6 +106,36 @@ body {
 .navbar-nav  > li a:hover, .navbar .nav > li a:focus {
     color: #999999;
 }
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+    margin-left:0;
+    margin-right:0;
+}
+
+.section-header h3{
+    font-size: 45px;
+}
+
+.subsection-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subsection-content h3 {
+    text-align: center;
+}
+
+.subsection-content ul {
+    list-style-position: inside;
+}
+
+.section-details-list {
+    font-size: 20px;
+}
+
 /*Education CSS a1faff*/
 
 /*Career Content */
