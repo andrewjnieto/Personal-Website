@@ -91,28 +91,32 @@ body {
     margin: 10px 0 10px 0;
 }
 
-
-/*#down-icon {
+#down-icon {
     position: absolute;
+    background-color: rgba(0,0,0,0.65);
+    border-radius: 1000px;
     bottom: 0;
-    vertical-align: center;
-}*/
+    right: 0;
+}
 
 .header {
     position: relative;
 }
 
-/* About Me CSS */
+/*aboutme content css*/
 .aboutme-box {
     font-size: 22px;
     width: 100%;
 }
 
+/*career content css*/
+.section-details-list {
+    font-size: 20px;
+}
 /*Skills section css */
 #abilities-content h4 {
     padding-top: 3vh;
     text-align: center;
-/*    text-decoration: underline;*/
     font-size: 30px;
 }
 
@@ -125,7 +129,9 @@ body {
     font-size: 18px;
 }
 
-
+#familiar {
+    text-align: center;
+}
 
 /*navbar css*/
 #resume-navbar {
@@ -166,9 +172,8 @@ body {
     box-shadow: 0 50vh 0 50vh grey;
     text-align: center;
 }
-#contact-list p{
+#contact-list p {
     margin-left: 100px;
-    /*height: 20vh;*/
 }
 #contact-list li{
     display: inline-block;  

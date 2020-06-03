@@ -25,12 +25,14 @@ $(document).ready(function () {
 		});
 	});
 
+	//When the user clicks on the down arrow, aboutme section will scroll into view.
 	$("#down-icon").on("click", function(e) {
 		e.preventDefault();
 		document.getElementById("aboutme-content").scrollIntoView({
 			behavior : 'smooth'
 		});
 	});
+
 	//If the user clicks on one of the links on the navbar,
 	// the active class will be added to the list item.
 	$('.navbar-nav li').on('click', function(event) {
@@ -61,7 +63,5 @@ $(document).ready(function () {
 	   $("#resume-navbar").find("a").parent().removeClass("active")
 	   .end().filter("[href='#"+id+"']").parent().addClass("active");
 	});
-
-
 
 });
