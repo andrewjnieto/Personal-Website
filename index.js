@@ -1,5 +1,6 @@
 $(document).ready(function () {
 	$('.top-content').backstretch("assets/backgrounds/background6.jpg");
+	$("#copyright").html("© Andrew Nieto " + new Date().getFullYear());
 	var navbar = document.getElementById("resume-navbar");
 	var sticky = navbar.offsetTop;
 
@@ -24,6 +25,12 @@ $(document).ready(function () {
 		});
 	});
 
+	$("#down-icon").on("click", function(e) {
+		e.preventDefault();
+		document.getElementById("aboutme-content").scrollIntoView({
+			behavior : 'smooth'
+		});
+	});
 	//If the user clicks on one of the links on the navbar,
 	// the active class will be added to the list item.
 	$('.navbar-nav li').on('click', function(event) {
@@ -54,4 +61,7 @@ $(document).ready(function () {
 	   $("#resume-navbar").find("a").parent().removeClass("active")
 	   .end().filter("[href='#"+id+"']").parent().addClass("active");
 	});
+
+
+
 });
