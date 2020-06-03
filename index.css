@@ -91,17 +91,6 @@ body {
     margin: 10px 0 10px 0;
 }
 
-
-/*#down-icon {
-    position: absolute;
-    bottom: 0;
-    vertical-align: center;
-}*/
-
-.header {
-    position: relative;
-}
-
 /* About Me CSS */
 .aboutme-box {
     font-size: 22px;
@@ -124,8 +113,6 @@ body {
     text-align: center;
     font-size: 18px;
 }
-
-
 
 /*navbar css*/
 #resume-navbar {
@@ -157,23 +144,4 @@ body {
 
 .active a {
     color: white;
-}
-
-/*footer css*/
-
-#footer-section {
-    background: grey;
-    box-shadow: 0 50vh 0 50vh grey;
-    text-align: center;
-}
-#contact-list p{
-    margin-left: 100px;
-    /*height: 20vh;*/
-}
-#contact-list li{
-    display: inline-block;  
-    list-style: none;
-    white-space: nowrap;
-    padding-top: 40px;
-    padding-right: 25px;
 }
