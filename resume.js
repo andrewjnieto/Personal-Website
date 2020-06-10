@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$('.top-content').backstretch("assets/backgrounds/background6.jpg");
+	$('.header').backstretch("assets/backgrounds/background6.jpg");
 	$("#copyright").html("© Andrew Nieto " + new Date().getFullYear());
 	var navbar = document.getElementById("resume-navbar");
 	var sticky = navbar.offsetTop;
@@ -63,5 +63,4 @@ $(document).ready(function () {
 	   $("#resume-navbar").find("a").parent().removeClass("active")
 	   .end().filter("[href='#"+id+"']").parent().addClass("active");
 	});
-
 });
