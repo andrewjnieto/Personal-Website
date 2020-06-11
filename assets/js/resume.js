@@ -1,10 +1,17 @@
 $(document).ready(function () {
 	$('.header').backstretch("assets/backgrounds/background6.jpg");
 	$("#copyright").html("© Andrew Nieto " + new Date().getFullYear());
-	var navbar = document.getElementById("resume-navbar");
-	var sticky = navbar.offsetTop;
+	stickyMenu();
+	smoothAnchors();
+	clickableArrow();
+	changePageMenuColors();
+	//If the user clicks on one of the links on the navbar, will have a smooth scroll animation.
+});
 
-	//If the view goes past a certain point, 
+
+function stickyMenu() { 
+	const navbar = document.getElementById("resume-navbar");
+	const sticky = navbar.offsetTop;
 	window.onscroll = () => {
 		if (window.pageYOffset >= sticky) {
 			navbar.style.position = "fixed";
@@ -14,8 +21,9 @@ $(document).ready(function () {
 			navbar.style.top = "100%";
 		}
 	};
+}
 
-	//If the user clicks on one of the links on the navbar, will have a smooth scroll animation.
+function smoothAnchors() {
 	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 		anchor.addEventListener('click', function (e) {
 			e.preventDefault();
@@ -24,7 +32,9 @@ $(document).ready(function () {
 			});
 		});
 	});
+}
 
+function clickableArrow() {
 	//When the user clicks on the down arrow, aboutme section will scroll into view.
 	$("#down-icon").on("click", function(e) {
 		e.preventDefault();
@@ -32,14 +42,9 @@ $(document).ready(function () {
 			behavior : 'smooth'
 		});
 	});
+}
 
-	//If the user clicks on one of the links on the navbar,
-	// the active class will be added to the list item.
-	$('.navbar-nav li').on('click', function(event) {
-		$(this).parents().find('li').removeClass('active');
-		$(this).addClass('active');
-	});
-
+function changePageMenuColors() {
 	var topMenuHeight = $("#resume-navbar").outerHeight()+15,
 	scrollItems = $("#resume-navbar").find("a").map(function(){
 		var item = $($(this).attr("href"));
@@ -63,4 +68,4 @@ $(document).ready(function () {
 	   $("#resume-navbar").find("a").parent().removeClass("active")
 	   .end().filter("[href='#"+id+"']").parent().addClass("active");
 	});
-});
+}
