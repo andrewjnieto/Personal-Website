@@ -175,6 +175,7 @@ body {
 }
 #resume-navbar .active {
     background-color: grey;
+    border-radius: 3px;
 }
 
 #resume-navbar .active a {
@@ -184,8 +185,8 @@ body {
 /*footer css*/
 
 #footer-section {
-    background: grey;
-    box-shadow: 0 50vh 0 50vh grey;
+    background: #c9f0ff;
+    box-shadow: 0 50vh 0 50vh #c9f0ff;
     text-align: center;
 }
 #contact-list p {

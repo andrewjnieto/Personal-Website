@@ -1,11 +1,10 @@
 $(document).ready(function () {
-	$('.header').backstretch("assets/backgrounds/background6.jpg");
+	$('.header').backstretch("assets/backgrounds/background2.jpg");
 	$("#copyright").html("© Andrew Nieto " + new Date().getFullYear());
 	stickyMenu();
 	smoothAnchors();
 	clickableArrow();
 	changePageMenuColors();
-	//If the user clicks on one of the links on the navbar, will have a smooth scroll animation.
 });
 
 
